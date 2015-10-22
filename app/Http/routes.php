@@ -18,6 +18,6 @@ Route::get('/lorem', 'Loremipsum@getIndex');
 
 Route::post('/lorem', 'Loremipsum@postIpsum');
 
-Route::get('/randomu', 'Randomuser@getIndex');
+Route::get('/randomu', 'RandomUser@getIndex');
 
-Route::post('/randomu', 'Randomuser@postGen');
+Route::post('/randomu', 'RandomUser@postGen');
