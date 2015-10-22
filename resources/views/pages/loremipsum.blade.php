@@ -5,7 +5,7 @@
 <h1>LOREM IPSUM GENERATOR</h1>
 <br>
 <h1>Create random filler text for your applications.</h1>
-
+<br>
 <div class="row">
 <div id="lorem-set">
 {!! Form::open(array('url' => 'lorem' , 'method' => 'post')) !!}
@@ -24,15 +24,19 @@ array(
 {!! Form::submit('Create LoremIpsum Text ', ['class' => 'btn btn-default btn-block']) !!}
 </div>
 </div>
+<br>
+<br>
 {!! Form::close() !!}
 <div class="row">
-  <div id='lorem'>
+
     @if (isset($result))
     @foreach ($result as $results)
+        <div id='lorem'>
         <p>{{ $results }}</p>
+        </div>
+        </br>
       @endforeach
     @endif
-  </div>
 </div>
 <br>
 @stop

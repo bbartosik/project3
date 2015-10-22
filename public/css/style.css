@@ -29,6 +29,12 @@ div #lorem-set {
 .btn-block {
     height: 50%;
     width: 100%;
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+    color: black;
+    font-size: 20px;
+    margin-top: 25px;
+
 }
 div #arrow {
   width: 100%;
@@ -45,6 +51,8 @@ h1  {
 h2 {
   font-family: 'Lucida Bright', Georgia, serif;
   color: black;
+  font-size: 30px;
+  text-align: center;
 
 }
 
@@ -55,6 +63,7 @@ img {
 }
 
 a {
+  text-align: center;
   color: #da4453;
   text-decoration: none;
 }

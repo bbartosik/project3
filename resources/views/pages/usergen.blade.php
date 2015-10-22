@@ -26,6 +26,8 @@
 	{!! Form::submit('Create User Data ', ['class' => 'btn btn-default btn-block']) !!}
 	</div>
 	</div>
+	<br>
+	<br>
 	{!! Form::close() !!}
 	<div class="row">
 			@if(isset($allusers))
