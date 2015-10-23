@@ -2,17 +2,16 @@
 @section('content')
 <br>
 <br>
+<br>
 <h1>Random User Generator</h1>
 <h1>Create random user data for your applications. Like Lorem Ipsum, but for people.</h1>
 
 <h1>User Generator</h1>
-<div class="row">
-<div id="gen">
 	<div class="row">
 	<div id="lorem-set">
 	{!! Form::open(array('url' => 'randomu' , 'method' => 'post')) !!}
 	<br>
-	{!! Form::label('charlable', 'Chose number of fake characters') !!}
+	{!! Form::label('numberofchars', 'Chose number of fake characters') !!}
 
 	{!! Form::select('numberofchars',
 	array(
@@ -42,7 +41,6 @@
 				<br>
 			@endforeach
 		@endif
-		</div>
 		</div>
 <br>
 @stop

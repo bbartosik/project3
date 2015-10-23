@@ -10,7 +10,7 @@
 <div id="lorem-set">
 {!! Form::open(array('url' => 'lorem' , 'method' => 'post')) !!}
 <br>
-{!! Form::label('loremlable', 'Chose number of paragraphs you need!') !!}
+{!! Form::label('numberofp', 'Chose number of paragraphs you need:') !!}
 
 {!! Form::select('numberofp',
 array(
@@ -22,19 +22,18 @@ array(
 '6' => '6 paragraphs'), '1'); !!}
 <br>
 {!! Form::submit('Create LoremIpsum Text ', ['class' => 'btn btn-default btn-block']) !!}
-</div>
-</div>
-<br>
-<br>
 {!! Form::close() !!}
+</div>
+</div>
+<br>
+<br>
 <div class="row">
-
     @if (isset($result))
     @foreach ($result as $results)
         <div id='lorem'>
         <p>{{ $results }}</p>
         </div>
-        </br>
+        <br>
       @endforeach
     @endif
 </div>
